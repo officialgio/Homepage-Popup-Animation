@@ -1,0 +1,102 @@
+:root { 
+  --clr-dark-brown: #4f2626;
+
+  --clr-linear-grad: linear-gradient(260deg, #9b6c50 0%, #4f2626 100%);
+
+  /* font-sizes */
+  --fs-900: clamp(5rem, 8vw + 1rem, 9.375rem);
+  --fs-800: 6.25rem;
+  --fs-700: 3.5rem;
+  --fs-600: 2rem;
+  --fs-500: 1rem;
+  --fs-400: 1.125rem;
+  --fs-300: 1rem;
+  --fs-200: 0.875rem;
+  --fs-logo: 300;
+
+  /* font-families */
+  --ff-apple-normal: -apple-system,
+      BlinkMacSystemFont,
+      Segoe UI,
+      Roboto,
+      Oxygen-Sans,
+      Ubuntu,
+      Cantarell,
+      Helvetica Neue,
+      sans-serif;
+
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--ff-apple-normal);
+  overflow: hidden;
+}
+
+nav {
+  min-height: 10vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.2rem;
+  overflow: hidden;
+}
+
+.hero__section {
+  height: 80vh;
+  margin: 0% 10%;
+}
+
+.hero__section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cta {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  flex-direction: column;
+  align-items: center;
+  font-size: var(--fs-600);
+}
+
+.cta__text span {
+  padding: 0rem 0.4rem;
+  display: block;
+  text-shadow: rgba(0, 0, 0, 0.4) 0px 0px 20px;
+}
+
+.cta__text h2 {
+  overflow: hidden;
+}
+
+.cta__button {
+  margin: 1rem;
+  padding: 0.5rem 2rem;
+  background-color: white;
+  border-radius: 0.3rem;
+  border: none;
+  font-size: 0.7rem;
+}
+
+.flex {
+  display: flex;
+
+}
